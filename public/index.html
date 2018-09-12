@@ -1,14 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
-  <title>Client</title>
+  <title>Ponyracing</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />-->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
-<script type="text/javascript" src="inline.bundle.js"></script><script type="text/javascript" src="polyfills.bundle.js"></script><script type="text/javascript" src="styles.bundle.js"></script><script type="text/javascript" src="vendor.bundle.js"></script><script type="text/javascript" src="main.bundle.js"></script></body>
+  <pr-root>
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+      <div class="row">
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+    </div>
+  </pr-root>
+  <script type="text/javascript" src="vendors/inline.bundle.js"></script>
+  <script type="text/javascript" src="vendors/polyfills.bundle.js"></script>
+  <script type="text/javascript" src="vendors/styles.bundle.js"></script>
+  <script type="text/javascript" src="vendors/vendor.bundle.js"></script>
+  <script type="text/javascript" src="vendors/main.bundle.js"></script>
+</body>
 </html>
